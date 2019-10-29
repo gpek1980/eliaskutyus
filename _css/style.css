@@ -1,0 +1,176 @@
+body {
+    padding: 20px;
+    background: #7C5E38;
+    font-family: Roboto, Arial, Verdana;
+}
+
+main {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+    background: #E2DDD2;
+}
+
+.w1140 {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: absolute;
+}
+
+.fixed-top {
+    display: block;
+    margin: 40px;
+}
+
+.carousel-item {
+    height: 750px;
+}
+
+.slide1 {
+    background: url("../pic/slide1.jpg");
+    background-position: center center;
+    background-size: 100%;
+}
+
+.carousel-caption {
+    bottom: 6vw !important;
+    margin: auto 0;
+}
+
+.slide1 label {
+    margin-top: auto;
+    color: #ffffff;
+    font-size: 12vw;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slide1 p {
+    font-weight: 200;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.fej {
+    position: absolute;
+    display: block;
+    background: url("../pic/fej1.png");
+    background-position: center center;
+    background-size: 100%;
+    top: -18vw;
+    left: 26vw;
+    width: 31vw;
+    height: 32vw;
+}
+
+
+@media (max-width: 1450px) {
+    .carousel-item {
+        height: 60vw;
+    }
+
+    .slide1 {
+        background-size: cover;
+    }
+
+    .carousel-caption {
+        bottom: 10vw !important;
+    }
+
+    .slide1 label {
+        font-size: 13vw;
+    }
+
+    .fej {
+        top: -22vw;
+        left: 25vw;
+        width: 34vw;
+        height: 36vw;
+    }
+
+    .w1140 {
+        width: 80% !important;
+    }
+
+}
+
+@media (max-width: 922px) {
+    .fej {
+        top: -16vw;
+        left: 25vw;
+        width: 34vw;
+        height: 36vw;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        background: #C0A783;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-item {
+        text-align: center;
+        border-bottom: 1px solid #af8e5e;
+    }
+}
+
+@media (max-width: 722px) {
+    .carousel-item {
+        height: 60vw;
+    }
+
+    .slide1 {
+        background-size: cover;
+    }
+
+    .carousel-caption {
+        bottom: 6vw !important;
+    }
+
+    .slide1 p {
+        font-size: 3vw;
+    }
+
+    .fej {
+        top: -16vw;
+        left: 25vw;
+        width: 34vw;
+        height: 36vw;
+    }
+
+}
+
+
+.logo {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.menu-item {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.menu-item:hover {
+    color: #800000;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+h2 {
+    font-weight: 800 !important;
+    font-size: 64px;
+    line-height: 96px;
+    color: #800000;
+}
+
+.lead {
+    color: #000000;
+
+}
