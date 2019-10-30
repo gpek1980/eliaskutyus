@@ -113,6 +113,18 @@ main {
         text-align: center;
         border-bottom: 1px solid #af8e5e;
     }
+
+    .frame {
+        height: 80% !important;
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 766px) {
+    .frame {
+        height: 100% !important;
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 722px) {
@@ -139,6 +151,15 @@ main {
         height: 36vw;
     }
 
+    .frame {
+        max-height: 90% !important;
+        width: 80% !important;
+    }
+
+    h2 {
+        font-weight: 800 !important;
+        font-size: 48px !important;
+    }
 }
 
 
@@ -163,6 +184,36 @@ main {
     border: 1px solid #ffffff;
 }
 
+/* - foto -*/
+
+.foto {
+    max-width: 500px;
+    max-height: 500px;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+.frame {
+    border: 1px solid #C0A783;
+    position: absolute;
+    display: block;
+    margin-left: -5%;
+    margin-top: 5%;
+    max-width: 445px;
+    max-height: 445px;
+    height: 90%;
+    width: 80%;
+}
+
+.frame-ext {
+    border: 1px solid #C0A783;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+}
+
 h2 {
     font-weight: 800 !important;
     font-size: 64px;
@@ -174,3 +225,50 @@ h2 {
     color: #000000;
 
 }
+
+/* - Blog - */
+
+#qbootstrap-blog {
+    position: relative;
+    padding: 10em 0 10em 0;
+}
+
+#qbootstrap-blog h2 {
+    width: 100% !important;
+}
+
+#qbootstrap-blog .blog-slide {
+    position: relative;
+}
+
+#qbootstrap-blog .blog-slide .blog-box {
+    display: block;
+    width: 100%;
+    height: 380px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+#qbootstrap-blog .blog-slide .blog-box .kutya-foto {
+    width: 278px;
+    height: auto;
+    margin: 20px 20px 40px 45px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#qbootstrap-blog .blog-slide .blog-box .kutya-decor {
+    width: 278px;
+}
+
+.kutya-text {
+    margin: 10px 10px 10px 40px;
+}
+
+.kutya-text h3 {
+    color: #F8A844;
+}
+

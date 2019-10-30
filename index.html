@@ -13,11 +13,15 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css" type="text/css">
+    <!-- OWL carousel -->
+    <link rel="stylesheet" href="_css/owl.carousel.min.css" type="text/css">
 
     <title>Carousel Template · Bootstrap</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="_css/animate.css">
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -39,6 +43,7 @@
             }
         }
     </style>
+
 
     <!-- Custom styles for this template -->
     <link href="_css/carusel.css" rel="stylesheet">
@@ -159,12 +164,15 @@
 
         <div class="row featurette">
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                     height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                     focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"/>
-                    <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
+                <div class="foto">
+                    <div class="frame">
+                        <div class="frame-ext"></div>
+                    </div>
+
+                    <img src="pic/foto.jpg" alt="Kutya"
+                         class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+
             </div>
             <div class="col-md-7">
                 <h2 class="featurette-heading">Kicsi a bors, de erős</h2>
@@ -175,6 +183,80 @@
                 </p>
             </div>
         </div>
+
+
+        <div id="qbootstrap-blog">
+            <div class="container container-fluid">
+                <div class="row animate-box text-center">
+
+                    <h2>Kutyáink</h2>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row animate-box">
+                            <div class="owl-carousel owl-carousel-fullwidth">
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="blog-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="kutya-foto">
+                                            <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                        </a>
+                                        <div class="kutya-text">
+                                            <h3>Nyírségfia Fátyol</h3>
+                                            <p>
+                                                Született: 2007.10.28.
+                                                Szín: maszkos fakó
+                                                Anyja: Köntöskerti-Cívis Fürge
+                                                Apja: Nyírségfia Ogur
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="blog-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="kutya-foto">
+                                            <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                        </a>
+                                        <div class="kutya-text">
+                                            <h3>Nyírségfia Fátyol</h3>
+                                            <p>
+                                                Született: 2007.10.28.
+                                                Szín: maszkos fakó
+                                                Anyja: Köntöskerti-Cívis Fürge
+                                                Apja: Nyírségfia Ogur
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="blog-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="kutya-foto">
+                                            <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                        </a>
+                                        <div class="kutya-text">
+                                            <h3>Nyírségfia Fátyol</h3>
+                                            <p>
+                                                Született: 2007.10.28.
+                                                Szín: maszkos fakó
+                                                Anyja: Köntöskerti-Cívis Fürge
+                                                Apja: Nyírségfia Ogur
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <hr class="featurette-divider">
 
@@ -230,12 +312,21 @@
 
 
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Script -->
+<script src="js/script.js"></script>
+
+
 <script>window.jQuery || document.write('<script src="bootstrap/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"
-        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
-        crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
