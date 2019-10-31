@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="author" content="gpek">
+    <meta name="generator" content="webstorm 2019.2">
 
     <link rel='stylesheet' id='google-fonts-1-css'
           href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COpen+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.2.4'
@@ -15,8 +15,10 @@
     <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css" type="text/css">
     <!-- OWL carousel -->
     <link rel="stylesheet" href="_css/owl.carousel.min.css" type="text/css">
+    <!-- Gallery css -->
+    <link rel="stylesheet" href="_css/gallery.css" type="text/css">
 
-    <title>Carousel Template · Bootstrap</title>
+    <title>Nádfalvi Kennel | Yorkshire</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
 
@@ -52,6 +54,7 @@
 </head>
 <body>
 
+<button onclick="topFunction()" id="topBtn" title="Tetejére"><i class="fa fa-chevron-up"></i></button>
 
 <header>
     <nav class="navbar navbar-expand-lg fixed-top w1140">
@@ -70,7 +73,7 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                 <ul class="navbar-nav ml-auto flex-nowrap">
                     <li class="nav-item">
-                        <a href="#kik_vagyunk" class="nav-link m-2 menu-item nav-active">Kik vagyunk</a>
+                        <a href="#kik-vagyunk" class="nav-link m-2 menu-item nav-active">Kik vagyunk</a>
                     </li>
                     <li class="nav-item">
                         <a href="#kutyaink" class="nav-link m-2 menu-item">Kutyáink</a>
@@ -120,10 +123,7 @@
                 </svg>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+
                     </div>
                 </div>
             </div>
@@ -133,11 +133,10 @@
                     <rect width="100%" height="100%" fill="#777"/>
                 </svg>
                 <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <div class="carousel-caption text-center">
+                        <h1>A legszebb kutya.</h1>
+                        <p>Hűséges játszótárs a mindennapokban, a gyerekek legjobb barátja. Ismerje meg ön is!</p>
+                        <p><a class="btn btn-lg btn-primary hol" href="#" role="button">Megnézem a galériát</a></p>
                     </div>
                 </div>
             </div>
@@ -159,8 +158,9 @@
 
     <div class="container marketing">
 
-        <!-- START THE FEATURETTES -->
+        <!-- Abaout -->
 
+        <a name="kik-vagyunk"></a>
 
         <div class="row featurette">
             <div class="col-md-5">
@@ -174,6 +174,7 @@
                 </div>
 
             </div>
+
             <div class="col-md-7">
                 <h2 class="featurette-heading">Kicsi a bors, de erős</h2>
                 <p class="lead">Az egyik legnépszerűbb fajta az Egyesült Államokban.
@@ -183,6 +184,31 @@
                 </p>
             </div>
         </div>
+
+
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="swell"></div>
+        </div>
+
+        <a name="kutyaink"></a>
+
+
+        <svg class="poligon1" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+        </svg>
+
+        <svg class="poligon2" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+        </svg>
+
+        <svg class="kor1" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32.5" cy="32.5" r="25" stroke="#F8A844" stroke-width="15"/>
+        </svg>
+
+        <svg class="kor2" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32.5" cy="32.5" r="25" stroke="#F8A844" stroke-width="15"/>
+        </svg>
 
 
         <div id="qbootstrap-blog">
@@ -257,61 +283,323 @@
             </div>
         </div>
 
+        <!-- Gallery -->
 
-        <hr class="featurette-divider">
+        <a name="galeria"></a>
 
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span
-                        class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
+        <div class="container pp-section">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 px-0 text-center">
+                    <h2> Galéria</h2>
+                </div>
             </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                     height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                     focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"/>
-                    <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                </svg>
+        </div>
+        <div class="container px-0 py-4">
+
+            <div class="pp-category-filter">
+                <div class="row">
+                    <div class="col-sm-12"><a class="btn btn-primary pp-filter-button" href="#"
+                                              data-filter="all">Mind</a><a
+                            class="btn btn-outline-primary pp-filter-button" href="#" data-filter="zsuzsi">Zsuzsi</a><a
+                            class="btn btn-outline-primary pp-filter-button" href="#" data-filter="baby">Baby</a><a
+                            class="btn btn-outline-primary pp-filter-button" href="#" data-filter="alex">Alex</a><a
+                            class="btn btn-outline-primary pp-filter-button" href="#" data-filter="gombi">Gömbi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <div class="pp-gallery">
+                <div class="card-columns">
+                    <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Zsuzsi"/>
+                            <figcaption>
+
+                                <p>Zsuszi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;alex&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Alex"/>
+                            <figcaption>
+
+                                <p>Alex</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Zsuzsi"/>
+                            <figcaption>
+
+                                <p>Zsuzsi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;baby&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Baby"/>
+                            <figcaption>
+
+                                <p>Baby</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot; , &quot;nature&quot;]"><a
+                            href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;baby&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Baby"/>
+                            <figcaption>
+
+                                <p>Baby</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;alex&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Alex"/>
+                            <figcaption>
+
+                                <p>Alex</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gombi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;zsuzsi&quot; , &quot;gombi&quot;]"><a
+                            href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Zsuzsi"/>
+                            <figcaption>
+
+                                <p>Zsuzsi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;alex&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Alex"/>
+                            <figcaption>
+
+                                <p>Alex</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;Alex&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Alex"/>
+                            <figcaption>
+
+                                <p>Alex</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
+                            <figcaption>
+
+                                <p>Gömbi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+                    <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="image-detail.html">
+                        <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="zsuzsi"/>
+                            <figcaption>
+
+                                <p>Zsuzsi</p>
+                            </figcaption>
+                        </figure>
+                    </a></div>
+
+                </div>
             </div>
         </div>
 
-        <hr class="featurette-divider">
+        <!-- Gallery end -->
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                    tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                     height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                     focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"/>
-                    <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+        <!-- News -->
+
+
+        <a name="hirek"></a>
+
+        <div id="qbootstrap-blog">
+            <div class="container container-fluid">
+                <div class="row animate-box text-center">
+
+                    <h2>Híreink újdonságok</h2>
+
+                    <svg class="poligon1" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+                    </svg>
+
+                    <svg class="kor1" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32.5" cy="32.5" r="25" stroke="#F8A844" stroke-width="15"/>
+                    </svg>
+
+                    <svg class="kor2" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32.5" cy="32.5" r="25" stroke="#F8A844" stroke-width="15"/>
                 </svg>
+
+            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row animate-box">
+                            <div class="owl-carousel owl-carousel-fullwidth">
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="news-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="news-foto">
+
+
+                                            <div class="kutya-text">
+                                                <span>2019.11.01</span>
+                                                <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                                <h3>Nyírségfia Fátyol3</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="news-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="news-foto">
+
+
+                                            <div class="kutya-text">
+                                                <span>2019.11.01</span>
+                                                <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                                <h3>Nyírségfia Fátyol2</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="blog-slide active">
+                                        <a href="#" class="news-box">
+                                            <img src="pic/image-12.png" alt="hir1" class="news-foto">
+
+                                            <div class="kutya-text">
+                                                <span>2019.11.01</span>
+                                                <img src="pic/decor1.jpg" alt="" class="kutya-decor">
+                                                <h3>Nyírségfia Fátyol1</h3>
+                                            </div>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <hr class="featurette-divider">
+    <!-- News -->
 
-        <!-- /END THE FEATURETTES -->
+
+    <!-- Contact -->
+
+    <a name="kapcsolat"></a>
+
+
+    <div class="contact">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 px-0 text-center">
+                <h2> Elérhetőségünk</h2>
+
+                <a href="#" class="btn btn-secondary btn-lg hol" role="button" aria-disabled="true">Hol találsz
+                    minket</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+
 
     </div><!-- /.container -->
 
+</main> <!-- /. main -->
 
     <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+<footer class="container footer">
+
+
+    <div class="row">
+        <div class="col-md-3 col-sm-12 px-0 text-left">
+            <h4>Nádfalvi Kennel</h4>
+            A kutyák beszélnek, de csak azok számára,
+            akik képesek meghallgatni őket.
+        </div>
+        <div class="col-md-3 col-sm-12 px-0 text-left">
+            Karcag<br>
+            Szent István Sgt. 17.<br>
+            Tel: +36-59-300-484<br>
+        </div>
+        <div class="col-md-3 col-sm-12 px-0 text-left">
+            <ul>
+                <li>Kik vagyunk?</li>
+                <li>Kutyáink</li>
+                <li>Híreink</li>
+                <li>Galéria</li>
+                <li>Kapcsolat</li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-sm-12 px-0 text-right social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </div>
+
+
+    <hr>
+    <p class="float-right"><a href="#">Vissza a lap tetejére</a></p>
+    <p>&copy; 2019 nádfalvy kennel</p>
     </footer>
 
 
-</main>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Stellar Parallax -->
