@@ -48,7 +48,7 @@ $('.pp-filter-button').on('click', function (e) {
     button.addClass('btn-primary');
     filterItems(button.data("filter"));
     e.preventDefault();
-})
+});
 
 function filterItems(filter) {
     if (filter === activeFilter) {
