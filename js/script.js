@@ -77,6 +77,9 @@ function filterItems(filter) {
                 card.fadeIn(400)
             }
         }, 500);
+
+
+
     });
 }
 
@@ -99,3 +102,22 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(this).removeClass();
+    });
+};
+
+$(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+        e.preventDefault();
+        var anim = $('.js--animations').val();
+        testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+        var anim = $(this).val();
+        testAnim(anim);
+    });
+});

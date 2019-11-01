@@ -59,7 +59,7 @@
 <header>
     <nav class="navbar navbar-expand-lg fixed-top w1140">
         <div class="row">
-            <div class="d-flex flex-grow-1">
+            <div class="d-flex flex-grow-1 wow bounce">
                 <span class="w-100 d-lg-none logo">nádfalvi kennel</span>
                 <a class="navbar-brand d-none d-lg-inline-block logo" href="#">
                     nádfalvi kennel
@@ -134,9 +134,9 @@
                 </svg>
                 <div class="container">
                     <div class="carousel-caption text-center">
-                        <h1>A legszebb kutya.</h1>
+                        <h3>A legszebb kutya.</h3>
                         <p>Hűséges játszótárs a mindennapokban, a gyerekek legjobb barátja. Ismerje meg ön is!</p>
-                        <p><a class="btn btn-lg btn-primary hol" href="#" role="button">Megnézem a galériát</a></p>
+                       <!--  <p><a class="btn btn-lg btn-primary hol" href="#" role="button">Megnézem a galériát</a></p> -->
                     </div>
                 </div>
             </div>
@@ -176,19 +176,13 @@
             </div>
 
             <div class="col-md-7">
-                <h2 class="featurette-heading">Kicsi a bors, de erős</h2>
+                <h2 class="featurette-heading animated bounce">Kicsi a bors, de erős</h2>
                 <p class="lead">Az egyik legnépszerűbb fajta az Egyesült Államokban.
                     Hosszú selymes szőrzete van, amely acélkék cser színű. Elsősorban társasági kutyaként tartják.<br>
                     <br>
                     Személyisége: magabiztos és bátor, miközben nagyon ragaszkodik a gazdihoz.
                 </p>
             </div>
-        </div>
-
-
-        <div class="ocean">
-            <div class="wave"></div>
-            <div class="swell"></div>
         </div>
 
         <a name="kutyaink"></a>
@@ -215,14 +209,14 @@
             <div class="container container-fluid">
                 <div class="row animate-box text-center">
 
-                    <h2>Kutyáink</h2>
+                    <h2 class="wow bounce">Kutyáink</h2>
 
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="row animate-box">
                             <div class="owl-carousel owl-carousel-fullwidth">
-                                <div class="item">
+                                <div class="item animated bounceInRight">
                                     <div class="blog-slide active">
                                         <a href="#" class="blog-box">
                                             <img src="pic/image-12.png" alt="hir1" class="kutya-foto">
@@ -240,8 +234,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="blog-slide active">
+                                <div class="item animated bounceInRight">
+                                    <div class="blog-slide active ">
                                         <a href="#" class="blog-box">
                                             <img src="pic/image-12.png" alt="hir1" class="kutya-foto">
                                             <img src="pic/decor1.jpg" alt="" class="kutya-decor">
@@ -290,7 +284,7 @@
         <div class="container pp-section">
             <div class="row">
                 <div class="col-md-12 col-sm-12 px-0 text-center">
-                    <h2> Galéria</h2>
+                    <h2 class="wow bounce">Galéria</h2>
                 </div>
             </div>
         </div>
@@ -298,7 +292,7 @@
 
             <div class="pp-category-filter">
                 <div class="row">
-                    <div class="col-sm-12"><a class="btn btn-primary pp-filter-button" href="#"
+                    <div class="col-sm-12 text-center"><a class="btn btn-primary pp-filter-button" href="#"
                                               data-filter="all">Mind</a><a
                             class="btn btn-outline-primary pp-filter-button" href="#" data-filter="zsuzsi">Zsuzsi</a><a
                             class="btn btn-outline-primary pp-filter-button" href="#" data-filter="baby">Baby</a><a
@@ -311,6 +305,7 @@
         <div class="container px-0">
             <div class="pp-gallery">
                 <div class="card-columns">
+
                     <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="image-detail.html">
                         <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Zsuzsi"/>
                             <figcaption>
@@ -319,6 +314,11 @@
                             </figcaption>
                         </figure>
                     </a></div>
+
+                    <svg class="poligon3" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+                    </svg>
+
                     <div class="card" data-groups="[&quot;gombi&quot;]"><a href="image-detail.html">
                         <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Gömbi"/>
                             <figcaption>
@@ -400,8 +400,7 @@
                             </figcaption>
                         </figure>
                     </a></div>
-                    <div class="card" data-groups="[&quot;zsuzsi&quot; , &quot;gombi&quot;]"><a
-                            href="image-detail.html">
+                    <div class="card" data-groups="[&quot;zsuzsi&quot; , &quot;gombi&quot;]"><a href="image-detail.html">
                         <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="Zsuzsi"/>
                             <figcaption>
 
@@ -441,7 +440,7 @@
                             </figcaption>
                         </figure>
                     </a></div>
-                    <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="image-detail.html">
+                    <div class="card" data-groups="[&quot;zsuzsi&quot;]"><a href="gallery/pic1.png">
                         <figure class="pp-effect"><img class="img-fluid" src="gallery/pic1.png" alt="zsuzsi"/>
                             <figcaption>
 
@@ -461,11 +460,15 @@
 
         <a name="hirek"></a>
 
+        <svg class="poligon3" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+        </svg>
+
         <div id="qbootstrap-blog">
             <div class="container container-fluid">
                 <div class="row animate-box text-center">
 
-                    <h2>Híreink újdonságok</h2>
+                    <h2 class="wow bounce">Híreink újdonságok</h2>
 
                     <svg class="poligon1" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
@@ -486,7 +489,7 @@
                             <div class="owl-carousel owl-carousel-fullwidth">
                                 <div class="item">
                                     <div class="blog-slide active">
-                                        <a href="#" class="news-box">
+                                        <a href="#" class="news-box" data-toggle="modal" data-target="#hirek1">
                                             <img src="pic/image-12.png" alt="hir1" class="news-foto">
 
 
@@ -498,6 +501,7 @@
                                         </a>
                                     </div>
                                 </div>
+
                                 <div class="item">
                                     <div class="blog-slide active">
                                         <a href="#" class="news-box">
@@ -536,6 +540,33 @@
         </div>
     </div>
 
+    <!-- Modal 1 -->
+    <div class="modal fade" id="hirek1" tabindex="-1" role="dialog" aria-labelledby="hirek1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLongTitle">Nyírség fia 2</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <svg class="poligon3" viewBox="0 0 63 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.41635 48.25L31.5 10L53.5836 48.25H9.41635Z" stroke="#C0A783" stroke-width="10"/>
+                </svg>
+                <div class="modal-body">
+                    <span>Ide jön a hír</span>
+                </div>
+                <div class="modal-footer">
+                   <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Bezárás</button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- / Modal 1 -->
+
+
     <!-- News -->
 
 
@@ -547,7 +578,7 @@
     <div class="contact">
         <div class="row">
             <div class="col-md-12 col-sm-12 px-0 text-center">
-                <h2> Elérhetőségünk</h2>
+                <h2 class="wow bounce"> Elérhetőségünk</h2>
 
                 <a href="#" class="btn btn-secondary btn-lg hol" role="button" aria-disabled="true">Hol találsz
                     minket</a>
@@ -572,24 +603,24 @@
             A kutyák beszélnek, de csak azok számára,
             akik képesek meghallgatni őket.
         </div>
-        <div class="col-md-3 col-sm-12 px-0 text-left">
+        <div class="col-md-3 col-sm-12 px-0 text-left col3">
             Karcag<br>
             Szent István Sgt. 17.<br>
             Tel: +36-59-300-484<br>
         </div>
-        <div class="col-md-3 col-sm-12 px-0 text-left">
+        <div class="col-md-3 col-sm-12 px-0 text-left col4">
             <ul>
-                <li>Kik vagyunk?</li>
-                <li>Kutyáink</li>
-                <li>Híreink</li>
-                <li>Galéria</li>
-                <li>Kapcsolat</li>
+                <li><a href="#kik-vagyunk">Kik vagyunk?</a></li>
+                <li><a href="#kutyaink">Kutyáink</a></li>
+                <li><a href="#hirek">Hireink</a></li>
+                <li><a href="#galeria">Galéria</a></li>
+                <li><a href="#kapcsolat">Kapcsolat</a></li>
             </ul>
         </div>
         <div class="col-md-3 col-sm-12 px-0 text-right social-icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-youtube"></i>
-            <i class="fa fa-linkedin"></i>
+            <a class="social fb" href="https://fb.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a class="social yt" href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a class="social li" href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
         </div>
     </div>
 
@@ -615,6 +646,10 @@
 <script>window.jQuery || document.write('<script src="bootstrap/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </body>
 </html>
